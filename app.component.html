@@ -1,0 +1,10 @@
+<h1>Agregar comentario</h1>
+
+<input type="text" [(ngModel)]="texto" placeholder="............"> <!--Lo que escribes en el input se guarda en la variable texto//-->
+<button (click)="agregarTexto()">Enter</button>
+<!-- Lista dinámica que muestra cada elemento de "lista" con *ngFor -->
+<ul>
+  <li *ngFor="let item of lista">{{ item }}</li>
+</ul>
+
+<router-outlet />
